@@ -11,15 +11,21 @@
 		C9EC9FFE225A529400068F00 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EC9FFD225A529400068F00 /* RootViewController.swift */; };
 		C9ECA000225A529600068F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EC9FFF225A529600068F00 /* Assets.xcassets */; };
 		C9ECA003225A529600068F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ECA001225A529600068F00 /* LaunchScreen.storyboard */; };
+		C9ECA00B225A559800068F00 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ECA00A225A559800068F00 /* UIStackView+.swift */; };
+		DBA23F6C9DC6E2CAF2A782A1 /* Pods_UIStackViewBackgroundColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7E56DC599FD3E496E33EB2 /* Pods_UIStackViewBackgroundColor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E7E56DC599FD3E496E33EB2 /* Pods_UIStackViewBackgroundColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIStackViewBackgroundColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9150472D783A3C5A80A2F7D1 /* Pods-UIStackViewBackgroundColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIStackViewBackgroundColor.release.xcconfig"; path = "Target Support Files/Pods-UIStackViewBackgroundColor/Pods-UIStackViewBackgroundColor.release.xcconfig"; sourceTree = "<group>"; };
+		AAE8BACD839C09ED9E55DC67 /* Pods-UIStackViewBackgroundColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIStackViewBackgroundColor.debug.xcconfig"; path = "Target Support Files/Pods-UIStackViewBackgroundColor/Pods-UIStackViewBackgroundColor.debug.xcconfig"; sourceTree = "<group>"; };
 		C9EC9FF8225A529400068F00 /* UIStackViewBackgroundColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIStackViewBackgroundColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EC9FFB225A529400068F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9EC9FFD225A529400068F00 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		C9EC9FFF225A529600068F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9ECA002225A529600068F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9ECA004225A529600068F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9ECA00A225A559800068F00 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA23F6C9DC6E2CAF2A782A1 /* Pods_UIStackViewBackgroundColor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37C0327E639AB38797AFE131 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8BACD839C09ED9E55DC67 /* Pods-UIStackViewBackgroundColor.debug.xcconfig */,
+				9150472D783A3C5A80A2F7D1 /* Pods-UIStackViewBackgroundColor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94DA9A9BC29320D8E3C8636A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E7E56DC599FD3E496E33EB2 /* Pods_UIStackViewBackgroundColor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9EC9FEF225A529400068F00 = {
 			isa = PBXGroup;
 			children = (
 				C9EC9FFA225A529400068F00 /* UIStackViewBackgroundColor */,
 				C9EC9FF9225A529400068F00 /* Products */,
+				37C0327E639AB38797AFE131 /* Pods */,
+				94DA9A9BC29320D8E3C8636A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +83,7 @@
 				C9EC9FFF225A529600068F00 /* Assets.xcassets */,
 				C9ECA001225A529600068F00 /* LaunchScreen.storyboard */,
 				C9ECA004225A529600068F00 /* Info.plist */,
+				C9ECA00A225A559800068F00 /* UIStackView+.swift */,
 			);
 			path = UIStackViewBackgroundColor;
 			sourceTree = "<group>";
@@ -68,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9ECA007225A529600068F00 /* Build configuration list for PBXNativeTarget "UIStackViewBackgroundColor" */;
 			buildPhases = (
+				3C3BDA3D30864C1DD21B90A8 /* [CP] Check Pods Manifest.lock */,
 				C9EC9FF4225A529400068F00 /* Sources */,
 				C9EC9FF5225A529400068F00 /* Frameworks */,
 				C9EC9FF6225A529400068F00 /* Resources */,
+				31D390855E7E5D9FA1E2E00C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31D390855E7E5D9FA1E2E00C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIStackViewBackgroundColor/Pods-UIStackViewBackgroundColor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIStackViewBackgroundColor/Pods-UIStackViewBackgroundColor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C3BDA3D30864C1DD21B90A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIStackViewBackgroundColor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9EC9FF4225A529400068F00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9EC9FFE225A529400068F00 /* RootViewController.swift in Sources */,
+				C9ECA00B225A559800068F00 /* UIStackView+.swift in Sources */,
 				C9EC9FFC225A529400068F00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +345,7 @@
 		};
 		C9ECA008225A529600068F00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE8BACD839C09ED9E55DC67 /* Pods-UIStackViewBackgroundColor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +364,7 @@
 		};
 		C9ECA009225A529600068F00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9150472D783A3C5A80A2F7D1 /* Pods-UIStackViewBackgroundColor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
